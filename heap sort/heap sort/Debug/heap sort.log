@@ -1,0 +1,8 @@
+﻿  heap sort.cpp
+C:\Users\Cristhian Fabricio\source\repos\heap sort\heap sort\heap sort.cpp(13): warning C4018: '<': no coinciden signed/unsigned
+  C:\Users\Cristhian Fabricio\source\repos\heap sort\heap sort\heap sort.cpp(77): note: vea la referencia a la creación de instancias de plantilla de función 'void printArray<int>(std::vector<int,std::allocator<_Ty>> &)' que se está compilando
+          with
+          [
+              _Ty=int
+          ]
+  heap sort.vcxproj -> C:\Users\Cristhian Fabricio\source\repos\heap sort\Debug\heap sort.exe

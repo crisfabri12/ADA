@@ -1,0 +1,11 @@
+﻿  ADA.cpp
+C:\Users\Cristhian Fabricio\source\repos\ADA\ADA\ADA.cpp(43): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\Cristhian Fabricio\source\repos\ADA\ADA\ADA.cpp(30): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  C:\Users\Cristhian Fabricio\source\repos\ADA\ADA\ADA.cpp(52): note: vea la referencia a la creación de instancias de plantilla de función 'std::vector<int,std::allocator<_Ty>> merge_sort<int>(std::vector<_Ty,std::allocator<_Ty>> &)' que se está compilando
+          with
+          [
+              _Ty=int
+          ]
+LINK : warning LNK4075: se omite '/INCREMENTAL' debido a la especificación '/PROFILE'
+ADA.obj : warning LNK4075: se omite '/EDITANDCONTINUE' debido a la especificación '/OPT:REF'
+  ADA.vcxproj -> C:\Users\Cristhian Fabricio\source\repos\ADA\x64\Debug\ADA.exe

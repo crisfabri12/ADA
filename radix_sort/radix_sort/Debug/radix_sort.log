@@ -1,0 +1,27 @@
+﻿  radix_sort.cpp
+C:\Users\Cristhian Fabricio\source\repos\radix_sort\radix_sort\radix_sort.cpp(63): warning C4018: '<': no coinciden signed/unsigned
+  C:\Users\Cristhian Fabricio\source\repos\radix_sort\radix_sort\radix_sort.cpp(70): note: vea la referencia a la creación de instancias de plantilla de función 'void print<int>(std::vector<int,std::allocator<_Ty>>)' que se está compilando
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\Cristhian Fabricio\source\repos\radix_sort\radix_sort\radix_sort.cpp(13): warning C4018: '<': no coinciden signed/unsigned
+  C:\Users\Cristhian Fabricio\source\repos\radix_sort\radix_sort\radix_sort.cpp(55): note: vea la referencia a la creación de instancias de plantilla de función 'N get_max<int>(std::vector<int,std::allocator<_Ty>> &)' que se está compilando
+          with
+          [
+              N=int,
+              _Ty=int
+          ]
+  C:\Users\Cristhian Fabricio\source\repos\radix_sort\radix_sort\radix_sort.cpp(69): note: vea la referencia a la creación de instancias de plantilla de función 'void radixsort<int>(std::vector<int,std::allocator<_Ty>> &)' que se está compilando
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\Cristhian Fabricio\source\repos\radix_sort\radix_sort\radix_sort.cpp(32): warning C4018: '<': no coinciden signed/unsigned
+  C:\Users\Cristhian Fabricio\source\repos\radix_sort\radix_sort\radix_sort.cpp(58): note: vea la referencia a la creación de instancias de plantilla de función 'void countSort<int>(std::vector<int,std::allocator<_Ty>> &,int)' que se está compilando
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\Cristhian Fabricio\source\repos\radix_sort\radix_sort\radix_sort.cpp(49): warning C4018: '<': no coinciden signed/unsigned
+  radix_sort.vcxproj -> C:\Users\Cristhian Fabricio\source\repos\radix_sort\Debug\radix_sort.exe
