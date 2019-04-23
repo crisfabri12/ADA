@@ -1,0 +1,3 @@
+﻿  merge_normal.cpp
+C:\Users\Cristhian Fabricio\source\repos\merge_normal\merge_normal\merge_normal.cpp(4): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  merge_normal.vcxproj -> C:\Users\Cristhian Fabricio\source\repos\merge_normal\Debug\merge_normal.exe

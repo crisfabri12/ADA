@@ -1,32 +1,81 @@
-// quicksort.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
-
+/* C implementation QuickSort */
+#include<stdio.h>
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
-template<class N>
-void quicksort(vector<N> A) {
-	iterator<N> i = A.begin();
-	iterator<N> j = A.end();
-	cout << i << endl;
 
+// A utility function to swap two elements 
+template<class N>
+void swap(N* a, N* b)
+{
+	N t = *a;
+	*a = *b;
+	*b = t;
 }
 
+/* This function takes last element as pivot, places
+   the pivot element at its correct position in sorted
+	array, and places all smaller (smaller than pivot)
+   to left of pivot and all greater elements to right
+   of pivot */
+template<class N>
+int partition(vector<N> &arr, int low, int high)
+{
+	N pivot = arr[high];    // pivot 
+	int i = (low - 1);  // Index of smaller element 
+
+	for (int j = low; j <= high - 1; j++)
+	{
+		// If current element is smaller than or 
+		// equal to pivot 
+		if (arr[j] <= pivot)
+		{
+			i++;    // increment index of smaller element 
+			swap(&arr[i], &arr[j]);
+		}
+	}
+	swap(&arr[i + 1], &arr[high]);
+	return (i + 1);
+}
+
+/* The main function that implements QuickSort
+ arr[] --> Array to be sorted,
+  low  --> Starting index,
+  high  --> Ending index */
+template<class N>
+void quickSort(vector<N>& arr, int low, int high)
+{
+	if (low < high)
+	{
+		/* pi is partitioning index, arr[p] is now
+		   at right place */
+		int pi = partition<N>(arr, low, high);
+
+		// Separately sort elements before 
+		// partition and after partition 
+		quickSort<N>(arr, low, pi - 1);
+		quickSort<N>(arr, pi + 1, high);
+	}
+}
+
+/* Function to print an array */
+template<class N>
+void printArray(vector<N> arr, int size)
+{
+	int i;
+	for (i = 0; i < size; i++)
+		printf("%d ", arr[i]);
+}
+
+// Driver program to test above functions 
 int main()
 {
-	vector<int> A = { 1,3,46,7,4,2,455,4,3 };
-	quicksort<int>(A);
-    std::cout << "Hello World!\n"; 
+	vector<int> arr = { 10, 7, 8, 9, 1, 5 };
+	int n = arr.size();
+	quickSort<int>(arr, 0, n - 1);
+	printf("Sorted array: ");
+	printArray<int>(arr, n);
+	return 0;
 }
-
-// Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
-// Depurar programa: F5 o menú Depurar > Iniciar depuración
-
-// Sugerencias para primeros pasos: 1. Use la ventana del Explorador de soluciones para agregar y administrar archivos
-//   2. Use la ventana de Team Explorer para conectar con el control de código fuente
-//   3. Use la ventana de salida para ver la salida de compilación y otros mensajes
-//   4. Use la ventana Lista de errores para ver los errores
-//   5. Vaya a Proyecto > Agregar nuevo elemento para crear nuevos archivos de código, o a Proyecto > Agregar elemento existente para agregar archivos de código existentes al proyecto
-//   6. En el futuro, para volver a abrir este proyecto, vaya a Archivo > Abrir > Proyecto y seleccione el archivo .sln
